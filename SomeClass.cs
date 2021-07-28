@@ -2,6 +2,8 @@ namespace hello_world_csharp
 {
     public class SomeClass
     {
+        public int myProp { get; set; }
+
         public SomeClass()
         {
         }
