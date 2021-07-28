@@ -2,6 +2,8 @@ namespace hello_world_csharp
 {
     public class SomeClass
     {
+
+
         public SomeClass()
         {
             NewMethod();
@@ -9,7 +11,12 @@ namespace hello_world_csharp
 
         private static string NewMethod()
         {
-            return "hello there";
+            string hello = "Hello";
+            string there = "there";
+
+            string hellothere = hello + " " + there;
+
+            return hellothere;
         }
     }
 }
