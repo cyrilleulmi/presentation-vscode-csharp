@@ -2,27 +2,24 @@ namespace hello_world_csharp
 {
     public class SomeClass
     {
-
-
         public SomeClass()
         {
-            NewMethod();
         }
 
-        private static string NewMethod()
+        public string helloThere(int someNumber)
         {
-            string hellothere = NewMethod1();
-
+            int x = someNumber;
+            string hellothere = privateHello(x);
             return hellothere;
         }
 
-        private static string NewMethod1()
+        private string privateHello(int x)
         {
             string hello = "Hello";
             string there = "there";
 
             string hellothere = hello + " " + there;
-            return hellothere;
+            return hellothere + x.ToString();
         }
     }
 }

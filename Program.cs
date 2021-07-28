@@ -6,7 +6,8 @@ namespace hello_world_csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SomeClass someClass = new SomeClass();
+            Console.WriteLine(someClass.helloThere(42));
         }
     }
 }
